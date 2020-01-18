@@ -4,7 +4,6 @@ function setDate() {
     const seconds = now.getSeconds();
     const secondsDegrees = ((seconds / 60) * 360) + 90;
     secondHand.style.transform = `rotate(${secondsDegrees}deg)`;
-    console.log(seconds);
     if (seconds == 1) {
         changeMessage();
     }
@@ -20,7 +19,22 @@ function setDate() {
 }
 
 function changeMessage() {
-    console.log('trying to change message');
+    let generatedNumber = Math.floor(Math.random()*7)
+    if (generatedNumber < 1) {
+        message.textContent = 'carpe diem';
+    } else if (generatedNumber < 2) {
+        message.textContent = 'sieze the day';
+    } else if (generatedNumber < 3) {
+        message.textContent = 'time goes on';
+    } else if (generatedNumber < 4) {
+        message.textContent = 'don\'t procrastinate';
+    } else if (generatedNumber < 5) {
+        message.textContent = 'work hard';
+    } else if (generatedNumber < 6) {
+        message.textContent = 'win at life';
+    } else if (generateNumber < 7) {
+        message.textContent = 'don\'t underestimate yourself';
+    }
 }
 
 const secondHand = document.querySelector('.second-hand');
@@ -29,3 +43,4 @@ const hourHand = document.querySelector('.hour-hand');
 const message = document.querySelector('p');
 
 setInterval(setDate, 1000);
+changeMessage();
