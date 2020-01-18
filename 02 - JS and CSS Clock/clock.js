@@ -25,7 +25,7 @@ function changeMessage() {
     } else if (generatedNumber < 2) {
         message.textContent = 'sieze the day';
     } else if (generatedNumber < 3) {
-        message.textContent = 'time goes on';
+        message.textContent = 'time doesn\'t wait';
     } else if (generatedNumber < 4) {
         message.textContent = 'don\'t procrastinate';
     } else if (generatedNumber < 5) {
