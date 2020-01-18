@@ -19,7 +19,7 @@ function setDate() {
 }
 
 function changeMessage() {
-    let generatedNumber = Math.floor(Math.random()*7)
+    let generatedNumber = Math.floor(Math.random()*8);
     if (generatedNumber < 1) {
         message.textContent = 'carpe diem';
     } else if (generatedNumber < 2) {
@@ -32,8 +32,10 @@ function changeMessage() {
         message.textContent = 'work hard';
     } else if (generatedNumber < 6) {
         message.textContent = 'win at life';
-    } else if (generateNumber < 7) {
+    } else if (generatedNumber < 7) {
         message.textContent = 'don\'t underestimate yourself';
+    } else if (generatedNumber < 8) {
+        message.textContent = 'you are capable of anything';
     }
 }
 
