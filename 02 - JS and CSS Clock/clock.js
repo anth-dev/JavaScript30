@@ -43,7 +43,7 @@ const secondHand = document.querySelector('.second-hand');
 const minuteHand = document.querySelector('.min-hand');
 const hourHand = document.querySelector('.hour-hand');
 const message = document.querySelector('p');
-const hand = document.querySelector('.hand');
+const secondHandStyle = document.getElementById('secondHand').style;
 
 setInterval(setDate, 1000);
 changeMessage();
