@@ -6,6 +6,9 @@ function setDate() {
     secondHand.style.transform = `rotate(${secondsDegrees}deg)`;
     if (seconds == 1) {
         changeMessage();
+        secondHand.style.transition = 'all 0.15s';
+    } else if (seconds == 0) {
+        secondHand.style.transition = 'none';
     }
 
     const minutes = now.getMinutes();
