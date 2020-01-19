@@ -89,7 +89,6 @@ body {
 }
 
 .hand {
-    width: 50%;
     height: 6px;
     background: black;
     position: absolute;
@@ -98,6 +97,19 @@ body {
     transform: rotate(90deg);
     transition: all 0.15s;
     transition-timing-function: cubic-bezier(0.71, 2.3, 0.88, 0.68);
+}
+
+.second-hand {
+    width: 50%;
+}
+
+.min-hand {
+    width: 50%;
+}
+
+.hour-hand {
+    width: 25%;
+    left: 25%;
 }
 
 .message {
