@@ -1,6 +1,9 @@
 html {
   box-sizing: border-box;
-  background: url('http://wes.io/hx9M/oh-la-la.jpg') center no-repeat;
+  /* background url is broken */
+  /* background: url('http://wes.io/hx9M/oh-la-la.jpg') center no-repeat; */
+  /* add dark mode background color so it is usable*/
+  background-color: rgba(16, 16, 16, 1);
   background-size: cover;
   min-height: 100vh;
   display: flex;
@@ -26,7 +29,7 @@ svg {
 .wrapper {
   padding: 20px;
   max-width: 350px;
-  background: rgba(255,255,255,0.95);
+  background: rgba(255,255,255, .90);
   box-shadow: 0 0 0 10px rgba(0,0,0,0.1);
 }
 
